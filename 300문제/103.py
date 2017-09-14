@@ -1,5 +1,6 @@
 password = '1517'
 wrong_count = 0
+
 while True:
     diva = input()
     if password == diva:
