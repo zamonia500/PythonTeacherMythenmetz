@@ -46,6 +46,24 @@ class Stack:
         else:
             return False
 
+    def is_valid_expr(self, expr):
+        pass
+
+    def infix_to_postfix(self, expr):
+        pass
+
+    def eval_postfix(self, postfix_expr):
+        pass
+
+    def cal_expr(self, expr):
+        if self.is_valid_expr(expr):
+            pass
+        else:
+            pass
+        postfix_expr = self.infix_to_postfix(expr)
+        result = self.eval_postfix(postfix_expr)
+        return result
+
 
 stack = Stack()
 stack.create()

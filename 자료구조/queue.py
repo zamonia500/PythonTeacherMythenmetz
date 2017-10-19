@@ -34,12 +34,27 @@ def deQueue(Q):
 
 
 def queue_isEmpty(Q):
-    pass
+    global front
+    global rear
+    if rear == front:
+        return True
+    else:
+        return False
+
 
 def queue_isFull(Q):
-    pass
+    global rear
+    if rear + 1 == QUEUE_SIZE:
+        True
+    else:
+        False
+
 
 def peek(Q):
-    pass
+    global front
+    if queue_isEmpty(Q):
+        raise OverflowError()
+    else:
+        return Q[front + 1]
 
 queue = queue_Create()
